@@ -1,0 +1,13 @@
+/****************************************************
+ *
+ * Sidebar
+ *
+ * *************************************************/
+
+#secondary {
+    background-color: CornflowerBlue;
+    flex: 1;
+
+    @include padding;
+}
+

@@ -1,0 +1,39 @@
+@import 'parts/mixins';
+
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/sidebar';
+
+@import 'plugins/normalize';
+
+
+/*
+ * Index
+ */
+
+#page {
+}
+
+#primary {
+    flex: 2;
+}
+
+#content {
+    background-color: Aquamarine;
+    display: flex;
+}
+
+.entry-header {
+
+    @include margin;
+}
+
+.entry-content {
+
+    @include margin;
+}
+
+p {
+    @include margin;
+}
+

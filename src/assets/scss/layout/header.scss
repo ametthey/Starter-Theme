@@ -1,0 +1,38 @@
+/****************************************************
+ *
+ * Header
+ *
+ * *************************************************/
+
+.skip-link {
+    display: none;
+}
+
+#masthead {
+    background-color: AntiqueWhite;
+
+    @include padding;
+}
+
+.site-branding {
+}
+
+.site-title {
+
+    @include margin;
+
+    a {
+        color: inherit;
+    }
+}
+
+.site-description {
+}
+
+#site-navigation {
+}
+
+#menu-header-menu {
+    display: flex;
+    justify-content: space-evenly;
+}
