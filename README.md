@@ -3,6 +3,7 @@
 1. change url of .local project in gulpfile
 2. change text of same name in package.json
 
+_____
 
 #======= STRUCTURE OF THE DIFFERENT FOLDER & FILES  ========
 
@@ -11,7 +12,6 @@
 includes:
 -> content-post.php
 
-_____
 
 
 #### single.php
