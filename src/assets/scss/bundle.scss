@@ -1,39 +1,38 @@
-@import 'parts/mixins';
+/*
+ * SCSS Structures
+ *
+ * # Sass Guidelines
+ * @link: https://sass-guidelin.es/fr/#architecture
+ *
+ * # Sass Boilereplate
+ * @link: https://github.com/HugoGiraudel/sass-boilerplate/tree/master/stylesheets/abstracts
+ */
 
+// Functionnal (abstracts)
+@import 'abstract/mixins';
+@import 'abstract/variables';
+@import 'abstract/functions';
+
+// Base
+@import 'base/base';
+@import 'base/fonts';
+@import 'base/helpers';
+@import 'base/typography';
+
+
+// Components
+
+// Layout
 @import 'layout/header';
 @import 'layout/footer';
 @import 'layout/sidebar';
 
-@import 'plugins/normalize';
+// Pages
+@import 'pages/home';
 
 
-/*
- * Index
- */
+// Vendors
+@import 'vendors/normalize';
 
-#page {
-}
 
-#primary {
-    flex: 2;
-}
-
-#content {
-    background-color: Aquamarine;
-    display: flex;
-}
-
-.entry-header {
-
-    @include margin;
-}
-
-.entry-content {
-
-    @include margin;
-}
-
-p {
-    @include margin;
-}
 

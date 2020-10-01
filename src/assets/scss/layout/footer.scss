@@ -6,6 +6,7 @@
 
 footer {
     background-color: DarkOrange;
+    display: flex;
 
     @include padding;
 }

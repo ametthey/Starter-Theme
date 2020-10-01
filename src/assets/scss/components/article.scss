@@ -1,0 +1,51 @@
+// -----------------------------------------------------------------------------
+// This file contains basic style for Articles
+// -----------------------------------------------------------------------------
+.entry-header {
+
+    @include margin;
+}
+
+.entry-content {
+
+    @include margin;
+}
+
+
+// Post-Formats
+.format-aside {
+    background-color: #FD151B;
+}
+
+.format-gallery {
+    background-color: #437F97;
+}
+
+.format-link {
+    background-color: #01295F;
+}
+
+.format-image {
+    background-color: #FFB30F;
+}
+
+.format-quote {
+    background-color: #F49D6E;
+}
+
+.format-status {
+    background-color: #ACC3A6;
+}
+
+.format-video {
+    background-color: #2C2C54;
+}
+
+.format-audio {
+   background-color: #256D1B;
+}
+
+.format-chat {
+   background-color: #A40E4C;
+}
+

@@ -23,7 +23,27 @@ get_header();
 
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-            <?php get_template_part( 'template-parts/content' , 'page' ); ?>
+        <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+            <header class="entry-header">
+
+                <?php the_title( '<h1>', '</h1>' ); ?>
+
+            </header>
+
+
+
+            <div class="entry-content">
+
+                <pre><?php var_export( $post ); ?></pre>
+
+                <?php the_content(); ?>
+
+            </div>
+
+            <?php if ( comments_open() ) : ?>
+                <?php comments_template(); ?>
+            <?php endif; ?>
+        </article>
 
         <?php endwhile; else : ?>
 
@@ -32,11 +52,10 @@ get_header();
         <?php endif; ?>
 
 
-        <p>Singular.php</p>
+        <p>Attachment.php</p>
     </main>
 </div>
 
-<?php get_sidebar(); ?>
 
 
 <?php get_footer(); ?>

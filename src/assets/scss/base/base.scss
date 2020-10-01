@@ -1,0 +1,32 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+/**
+ * Set up a decent box model on the root element
+ */
+html {
+    box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+#page {
+
+}
+
+#content {
+    background-color: Aquamarine;
+    display: flex;
+}
+
+#primary {
+    flex: 2;
+}
+
+#main {
+    @include margin;
+}
