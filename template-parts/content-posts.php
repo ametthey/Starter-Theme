@@ -4,6 +4,8 @@
   */
 ?>
 
+<p>Template: Content-posts.php</p>
+
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <header class="entry-header">
 
@@ -17,7 +19,6 @@
     </header>
 
     <div class="entry-content">
-        <p>what</p>
         <?php the_content( 'Read More' ); ?>
     </div>
 

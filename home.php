@@ -3,7 +3,7 @@
 <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
 
-        <h1><?php wp_title( ' ' ); ?></h1>
+        <p>Template: Home.php</p>
 
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
@@ -14,7 +14,6 @@
         <?php echo paginate_links(); ?>
 
 
-        <p>Home.php</p>
     </main>
 </div>
 
