@@ -4,7 +4,7 @@
   */
 ?>
 
-<p>Template: Content-portfolio.php</p>
+<p>Template: Content-project.php</p>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <header class="entry-header">
