@@ -17,7 +17,7 @@
 
             <div class="entry-content">
 
-                <p><a href="<?php echo $post->guid; ?>">Download the attachment</a></p>
+                <p><video src="<?php echo esc_url( $post->guid ); ?>" controls></video></p>
 
                 <?php the_content(); ?>
 
@@ -30,7 +30,7 @@
 
         <?php endwhile; endif; ?>
 
-        <p>Template: Attachment.php</p>
+        <p>Template: Video.php</p>
     </main>
 </div>
 

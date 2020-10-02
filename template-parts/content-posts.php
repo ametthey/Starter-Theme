@@ -17,7 +17,8 @@
     </header>
 
     <div class="entry-content">
-        <?php the_excerpt(); ?>
+        <p>what</p>
+        <?php the_content(); ?>
     </div>
 
 </article>

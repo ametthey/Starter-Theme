@@ -2,7 +2,7 @@
 
 // Register Custom Post Type Project
 // Post Type Key: project
-function _themename_create_project_cpt() {
+function _themename_custom_post_type() {
 
 	$labels = array(
 		'name' => _x( 'Portfolio', 'Post Type General Name', '_themename' ),
@@ -39,7 +39,7 @@ function _themename_create_project_cpt() {
 		'labels' => $labels,
         'menu_icon' => 'dashicons-admin-customizer',
 		'supports' => array('title', 'editor', 'excerpt', 'thumbnail'),
-		'taxonomies' => array(),
+		'taxonomies' => array( 'skill' ),
 		'public' => true,
 		'show_ui' => true,
 		'show_in_menu' => true,
@@ -48,7 +48,7 @@ function _themename_create_project_cpt() {
 		'show_in_nav_menus' => true,
 		'can_export' => true,
 		'has_archive' => true,
-		'hierarchical' => false,
+		'hierarchical' => true,
 		'exclude_from_search' => false,
 		'show_in_rest' => true,
 		'publicly_queryable' => true,
@@ -57,5 +57,5 @@ function _themename_create_project_cpt() {
 	register_post_type( 'project', $args );
 
 }
-add_action( 'init', '_themename_create_project_cpt', 0 );
+add_action( 'init', '_themename_custom_post_type', 0 );
 

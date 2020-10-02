@@ -17,7 +17,7 @@
 
             <div class="entry-content">
 
-                <p><a href="<?php echo $post->guid; ?>">Download the attachment</a></p>
+                <p><img src="<?php echo esc_url( $post->guid ); ?>" alt="<?php echo esc_attr( get_the_title() ); ?>"></p>
 
                 <?php the_content(); ?>
 
@@ -28,9 +28,9 @@
             <?php endif; ?>
         </article>
 
-        <?php endwhile; endif; ?>
+        <?php endwhile; if; ?>
 
-        <p>Template: Attachment.php</p>
+        <p>Image.php</p>
     </main>
 </div>
 

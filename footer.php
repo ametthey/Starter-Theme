@@ -10,6 +10,7 @@
                 ?>
 
                 <?php dynamic_sidebar( 'my-footer-sidebar' ); ?>
+
             </footer>
 
         </div><!-- #page -->

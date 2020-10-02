@@ -22,6 +22,17 @@
             'before_title'  => '<h2 class="footer-widget-title">',
             'after_title'   => '</h2>',
         ]);
+        // setup Widget Areas in Footer
+        register_sidebar([
+            'name'          => esc_html__( 'my page sidebar', '_themename' ),
+            'id'            => 'my-page-sidebar',
+            'description'   => esc_html__( 'Add widgets for the page sidebar here', '_themename' ),
+            'class'         => 'my-page-sidebar',
+            'before_widget' => '<section class="page-widget">',
+            'after_widget'  => '</section>',
+            'before_title'  => '<h2 class="page-widget-title">',
+            'after_title'   => '</h2>',
+        ]);
     }
     add_action( 'widgets_init', '_themename_widgets_init' );
 

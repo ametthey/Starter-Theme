@@ -1,3 +1,7 @@
+<?php
+    // Template Name: Splash Page
+    // Template Post Type: post, page
+?>
 <?php get_header(); ?>
 
 <div id="primary" class="content-area">
@@ -6,15 +10,15 @@
 
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-            <?php get_template_part( 'template-parts/content' , 'posts' ); ?>
+            <?php get_template_part( 'template-parts/content' , 'page' ); ?>
 
         <?php endwhile; endif; ?>
 
-        <p>Single.php</p>
+        <p>Template: Template-slash.php</p>
     </main>
 </div>
 
-<?php get_sidebar(); ?>
+<?php get_sidebar( 'page' ); ?>
 
 
 <?php get_footer(); ?>

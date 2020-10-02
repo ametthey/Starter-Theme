@@ -28,6 +28,9 @@
                     <p class="site-description">
                         <?php bloginfo( 'description' ); ?>
                     </p>
+                    <p class="site-language">
+                        <?php bloginfo( 'language' ); ?>
+                    </p>
                 </div>
 
                 <nav id="site-navigation" class="main-navigation" role="navigation">
