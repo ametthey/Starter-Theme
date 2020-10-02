@@ -8,6 +8,11 @@
  * @link: https://github.com/HugoGiraudel/sass-boilerplate/tree/master/stylesheets/abstracts
  */
 
+
+// Vendors
+@import 'vendors/reset';
+@import 'vendors/normalize';
+
 // Functionnal (abstracts)
 @import 'abstract/mixins';
 @import 'abstract/variables';
@@ -31,8 +36,6 @@
 @import 'pages/home';
 
 
-// Vendors
-@import 'vendors/normalize';
 
 
 

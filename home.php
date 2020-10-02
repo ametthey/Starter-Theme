@@ -7,7 +7,7 @@
 
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-            <?php get_template_part( 'template-parts/content-posts' , get_post_format() ); ?>
+            <?php get_template_part( 'template-parts/content' , 'posts' ); ?>
 
         <?php endwhile; endif;?>
 

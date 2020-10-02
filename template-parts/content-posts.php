@@ -18,7 +18,7 @@
 
     <div class="entry-content">
         <p>what</p>
-        <?php the_content(); ?>
+        <?php the_content( 'Read More' ); ?>
     </div>
 
 </article>

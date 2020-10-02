@@ -1,3 +1,17 @@
 // -----------------------------------------------------------------------------
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
+
+$bg: #fff;
+$color: #000;
+
+$scale: 1.250;
+$p: 1rem;
+// $h1:;
+// $h2:;
+// $h3:;
+$h1: calc( #{$p} * calc( #{$scale} * #{$scale} * #{$scale} * #{$scale} * #{$scale}) );
+$h2: calc( #{$p} * calc( #{$scale} * #{$scale} * #{$scale} * #{$scale}) );
+$h3: calc( #{$p} * calc( #{$scale} * #{$scale} * #{$scale} ) );
+$h4: calc( #{$p} * calc( #{$scale} * #{$scale} ) );
+$h5: calc( #{$p} * #{$scale} );
