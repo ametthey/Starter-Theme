@@ -19,19 +19,22 @@
             <header id="masthead" class="site-header" role="banner">
 
                 <div class="site-branding">
-                    <h2>My Website Title & Info</h2>
+                    <h2>The Header</h2>
                     <p class="site-title">
-                        <a href="<?php echo esc_url( home_url( '/' ) )?>" rel="home">
+                        <a href="
+                            <?php echo esc_url( home_url( '/' ) )?>" rel="home">
+                            <?php esc_html_e( 'The Website Name: ' ); ?>
                             <?php bloginfo( ' name' ); ?>
                         </a>
                     </p>
                     <p class="site-description">
+                        <?php esc_html_e( 'The Website Description: ' ); ?>
                         <?php bloginfo( 'description' ); ?>
                     </p>
                 </div>
 
                 <nav id="site-navigation" class="main-navigation" role="navigation">
-                    <h2>My Menu</h2>
+                    <h2>The Header Menu</h2>
                     <?php
                         $args = [
                             'theme_location'    => 'header-menu',

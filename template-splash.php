@@ -18,7 +18,7 @@
     </main>
 </div>
 
-<?php get_sidebar( 'page' ); ?>
+<?php get_sidebar( 'splash' ); ?>
 
 
 <?php get_footer(); ?>

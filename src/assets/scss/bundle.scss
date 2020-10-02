@@ -9,14 +9,15 @@
  */
 
 
-// Vendors
-@import 'vendors/reset';
-@import 'vendors/normalize';
 
-// Functionnal (abstracts)
+// Abstracts
 @import 'abstract/mixins';
 @import 'abstract/variables';
 @import 'abstract/functions';
+
+// Vendors
+@import 'vendors/reset';
+@import 'vendors/normalize';
 
 // Base
 @import 'base/base';
@@ -26,6 +27,8 @@
 
 
 // Components
+@import 'components/article';
+@import 'components/widget';
 
 // Layout
 @import 'layout/header';

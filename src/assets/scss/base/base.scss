@@ -3,30 +3,69 @@
 // -----------------------------------------------------------------------------
 
 /**
+ * Make all elements inherit from `html` box-sizing
+ */
+* {
+  box-sizing: inherit;
+
+  & :before {
+      box-sizing: inherit;
+  }
+
+  & :after {
+      box-sizing: inherit;
+  }
+}
+
+/**
  * Set up a decent box model on the root element
  */
 html {
     box-sizing: border-box;
 }
 
-*::before,
-*::after {
-  box-sizing: inherit;
+a {
+    color: $color;
+    text-decoration: none;
+
+    & :hover {
+        color: inherit;
+    }
+    & :active {
+        color: inherit;
+    }
+    & :focus {
+        color: inherit;
+    }
 }
 
+/*
+ * Container wrapping the whole page
+ */
 #page {
-
+    height: 100%;
+    width: 100%;
 }
 
+/*
+ * Container for the main element and the sidebar
+ * without header & footer
+ */
 #content {
     background-color: Aquamarine;
     display: flex;
 }
 
+/*
+ * Container with sidebar
+ */
 #primary {
     flex: 2;
 }
 
+/*
+ * Container for main element
+ * without sidebar
+ */
 #main {
-    @include margin;
 }
