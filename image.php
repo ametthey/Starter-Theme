@@ -28,9 +28,9 @@
             <?php endif; ?>
         </article>
 
-        <?php endwhile; if; ?>
+        <?php endwhile; endif ?>
 
-        <p>Image.php</p>
+        <p>Template: Attachement/Image.php</p>
     </main>
 </div>
 

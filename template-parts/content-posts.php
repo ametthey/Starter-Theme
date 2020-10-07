@@ -15,6 +15,10 @@
 
         <div class="byline">
             <?php esc_html_e( 'Author:' , '_themename'); ?><?php the_author_posts_link(); ?>
+            <br>
+            <?php esc_html_e( 'Author bio:' ,'_themename' ); ?><?php the_author_meta( 'description' , $post->post_author ); ?>
+            <br>
+            Date: <?php the_time( 'j F Y' );?>
         </div>
     </header>
 

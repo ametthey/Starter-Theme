@@ -1,0 +1,89 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+PRODUCTION	gulpfile.babel.js	/^const PRODUCTION = yargs.argv.prod;$/;"	V
+_themename_admin_assets	lib/enqueue-assets.php	/^function _themename_admin_assets() {$/;"	f
+_themename_assets	lib/enqueue-assets.php	/^function _themename_assets() {$/;"	f
+_themename_custom_post_type	lib/custom-post-type.php	/^function _themename_custom_post_type() {$/;"	f
+_themename_defer_parsing_of_js	lib/enqueue-assets.php	/^function _themename_defer_parsing_of_js( $url ) {$/;"	f
+_themename_image_configuration	lib/images.php	/^function _themename_image_configuration() {$/;"	f
+_themename_login_assets	lib/enqueue-assets.php	/^function _themename_login_assets() {$/;"	f
+_themename_no_more_jquery	lib/enqueue-assets.php	/^function _themename_no_more_jquery(){$/;"	f
+_themename_remove_options_menu	lib/custom-admin-bar.php	/^function _themename_remove_options_menu(){$/;"	f
+_themename_taxonomy_skill	lib/custom-taxonomy.php	/^function _themename_taxonomy_skill() {$/;"	f
+_themename_widgets_init	lib/sidebar.php	/^    function _themename_widgets_init() {$/;"	f
+args	header.php	/^                        $args = [$/;"	v
+args	lib/custom-post-type.php	/^	$args = array($/;"	v
+args	lib/custom-taxonomy.php	/^	$args = array($/;"	v
+args	packaged/header.php	/^                        $args = [$/;"	v
+args	packaged/lib/custom-post-type.php	/^	$args = array($/;"	v
+args	sidebar-login.php	/^        $args = [$/;"	v
+build	gulpfile.babel.js	/^export const build = gulp.series(clean, gulp.parallel(styles, scripts, images, copy));$/;"	E
+bundle	gulpfile.babel.js	/^export const bundle = gulp.series(build, compress);$/;"	E
+clean	gulpfile.babel.js	/^export const clean = () => del(['dist']);$/;"	E
+compress	gulpfile.babel.js	/^export const bundle = gulp.series(build, compress);$/;"	E
+compress	gulpfile.babel.js	/^export const compress = () => {$/;"	E
+copy	gulpfile.babel.js	/^export const copy = () => {$/;"	E
+dequeue_my_css	lib/cleanup.php	/^function dequeue_my_css() {$/;"	f
+dequeue_my_css	packaged/lib/cleanup.php	/^function dequeue_my_css() {$/;"	f
+dest	gulpfile.babel.js	/^        dest: 'dist\/assets'$/;"	P
+dest	gulpfile.babel.js	/^        dest: 'dist\/assets\/css'$/;"	P
+dest	gulpfile.babel.js	/^        dest: 'dist\/assets\/images'$/;"	P
+dest	gulpfile.babel.js	/^        dest: 'dist\/assets\/js'$/;"	P
+dest	gulpfile.babel.js	/^        dest: 'packaged'$/;"	P
+dev	gulpfile.babel.js	/^export const dev = gulp.series(clean, gulp.parallel(styles, scripts, images, copy), serve, watch);$/;"	E
+devtool	gulpfile.babel.js	/^            devtool: !PRODUCTION ? 'inline-source-map' : false,$/;"	P
+disable_emojis	lib/cleanup.php	/^function disable_emojis() {$/;"	f
+disable_emojis	packaged/lib/cleanup.php	/^function disable_emojis() {$/;"	f
+disable_emojis_remove_dns_prefetch	lib/cleanup.php	/^function disable_emojis_remove_dns_prefetch( $urls, $relation_type ) {$/;"	f
+disable_emojis_remove_dns_prefetch	packaged/lib/cleanup.php	/^function disable_emojis_remove_dns_prefetch( $urls, $relation_type ) {$/;"	f
+disable_emojis_tinymce	lib/cleanup.php	/^function disable_emojis_tinymce( $plugins ) {$/;"	f
+disable_emojis_tinymce	packaged/lib/cleanup.php	/^function disable_emojis_tinymce( $plugins ) {$/;"	f
+emoji_svg_url	lib/cleanup.php	/^        $emoji_svg_url = apply_filters( 'emoji_svg_url', 'https:\/\/s.w.org\/images\/core\/emoji\/2\/svg\/' );$/;"	v
+emoji_svg_url	packaged/lib/cleanup.php	/^        $emoji_svg_url = apply_filters( 'emoji_svg_url', 'https:\/\/s.w.org\/images\/core\/emoji\/2\/svg\/' );$/;"	v
+exclude	gulpfile.babel.js	/^                        exclude: \/(node_modules|bower_components)\/,$/;"	P
+filename	gulpfile.babel.js	/^                filename: '[name].js'$/;"	P
+gulp	gulpfile.babel.js	/^export const build = gulp.series(clean, gulp.parallel(styles, scripts, images, copy));$/;"	E
+gulp	gulpfile.babel.js	/^export const dev = gulp.series(clean, gulp.parallel(styles, scripts, images, copy), serve, watch);$/;"	E
+images	gulpfile.babel.js	/^export const images = () => {$/;"	E
+labels	lib/custom-post-type.php	/^	$labels = array($/;"	v
+labels	lib/custom-taxonomy.php	/^	$labels = array($/;"	v
+labels	packaged/lib/custom-post-type.php	/^	$labels = array($/;"	v
+loader	gulpfile.babel.js	/^                            loader: 'babel-loader',$/;"	P
+mode	gulpfile.babel.js	/^            mode: PRODUCTION ? 'production' : 'development' \/\/ add this$/;"	P
+path	gulpfile.babel.js	/^const path = {$/;"	O
+presets	gulpfile.babel.js	/^                                presets: ['@babel\/preset-env']$/;"	P
+proxy	gulpfile.babel.js	/^        proxy: "startertheme.local",$/;"	P
+reload	gulpfile.babel.js	/^export const reload = (done) => {$/;"	E
+remove_jquery_migrate	lib/enqueue-assets.php	/^function remove_jquery_migrate( $scripts ) {$/;"	f
+remove_jquery_migrate	packaged/lib/enqueue-assets.php	/^function remove_jquery_migrate( $scripts ) {$/;"	f
+rules	gulpfile.babel.js	/^                rules: [$/;"	P
+script	lib/enqueue-assets.php	/^        $script = $scripts->registered['jquery'];$/;"	v
+script	packaged/lib/enqueue-assets.php	/^        $script = $scripts->registered['jquery'];$/;"	v
+scripts	gulpfile.babel.js	/^export const build = gulp.series(clean, gulp.parallel(styles, scripts, images, copy));$/;"	E
+scripts	gulpfile.babel.js	/^export const dev = gulp.series(clean, gulp.parallel(styles, scripts, images, copy), serve, watch);$/;"	E
+scripts	gulpfile.babel.js	/^export const scripts = () => {$/;"	E
+serve	gulpfile.babel.js	/^export const serve = (done) => {$/;"	E
+server	gulpfile.babel.js	/^const server = browserSync.create();$/;"	V
+src	gulpfile.babel.js	/^        src: 'src\/assets\/images\/**\/*.{jpg, jpeg, png, svg, gif}',$/;"	P
+src	gulpfile.babel.js	/^        src: ['**\/*', '!.DS_Store', '!node_modules{,\/**}', '!packaged{,\/**}', '!src{,\/**}', '!.babelrc' , '!gitignore' , '!gulpfile.babel.js' , '!package.json' , '!package-lock.json'],$/;"	P
+src	gulpfile.babel.js	/^        src: ['src\/assets\/**\/*', '!src\/assets\/{images,js,scss}', '!src\/assets\/{images,js,scss}\/**\/*'],$/;"	P
+src	gulpfile.babel.js	/^        src: ['src\/assets\/js\/main.js','src\/assets\/js\/admin.js'],$/;"	P
+src	gulpfile.babel.js	/^        src: ['src\/assets\/scss\/bundle.scss'],$/;"	P
+starterTheme_admin_assets	packaged/lib/enqueue-assets.php	/^function starterTheme_admin_assets() {$/;"	f
+starterTheme_assets	packaged/lib/enqueue-assets.php	/^function starterTheme_assets() {$/;"	f
+starterTheme_create_project_cpt	packaged/lib/custom-post-type.php	/^function starterTheme_create_project_cpt() {$/;"	f
+starterTheme_defer_parsing_of_js	packaged/lib/enqueue-assets.php	/^function starterTheme_defer_parsing_of_js( $url ) {$/;"	f
+starterTheme_image_configuration	packaged/lib/images.php	/^function starterTheme_image_configuration() {$/;"	f
+starterTheme_login_assets	packaged/lib/enqueue-assets.php	/^function starterTheme_login_assets() {$/;"	f
+starterTheme_no_more_jquery	packaged/lib/enqueue-assets.php	/^function starterTheme_no_more_jquery(){$/;"	f
+starterTheme_remove_options_menu	packaged/lib/custom-admin-bar.php	/^function starterTheme_remove_options_menu(){$/;"	f
+starterTheme_widgets_init	packaged/lib/sidebar.php	/^    function starterTheme_widgets_init() {$/;"	f
+styles	gulpfile.babel.js	/^export const styles = () => {$/;"	E
+test	gulpfile.babel.js	/^                        test: \/\\.m?js$\/,$/;"	P
+urls	lib/cleanup.php	/^        $urls = array_diff( $urls, array( $emoji_svg_url ) );$/;"	v
+urls	packaged/lib/cleanup.php	/^        $urls = array_diff( $urls, array( $emoji_svg_url ) );$/;"	v
+watch	gulpfile.babel.js	/^export const watch = () => {$/;"	E
