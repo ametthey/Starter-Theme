@@ -228,5 +228,36 @@ https://developer.wordpress.org/themes/references/list-of-template-tags/
         __()
 
 
+#======= Differents types of Hooks =======
 
+**Action Hooks**
+- When a certain WordPress lifecycle event occurs
+- Run your code
 
+- do_action() _create an action hook_
+- add_action() _Hook in code_
+- remove_action() _Unhook in code_
+
+**Filter Hooks**
+- Get WordPress data
+- Modify the data
+- Return the modified data
+Hooks are a way for us to add our own code to customize default Wordpress behavior
+
+**Wordpress Action Runtime Lifecycle**
+1. Common Frond End Life Cycle
+2. Admin Area Life Cycle
+
+list and all hooks & lifecycle
+https://codex.wordpress.org/Plugin_API/Action_Reference
+
+global hook functions
+$wp_actions (trigger on page load)
+$wp_filter (see what is hooked with $wp_actions)
+$wp_filter[ 'action_name' ];
+
+### Debug Hooks with R_Debug
+**R_Debug::list_hooks();**
+
+**to show certain hooks***
+R_Debug::list_hooks("content");

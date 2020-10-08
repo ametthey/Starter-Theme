@@ -15,6 +15,4 @@
     </main>
 </div>
 
-<?php get_sidebar( 'login' ); ?>
-
 <?php get_footer(); ?>

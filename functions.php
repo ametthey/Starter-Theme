@@ -17,4 +17,7 @@ require_once( 'lib/images.php' );
 require_once( 'lib/acf.php' );
 require_once( 'lib/users.php' );
 
+// https://gist.github.com/Rarst/1739714
+require_once( 'lib/r-debug.php' );
+
 ?>
