@@ -243,10 +243,11 @@ https://developer.wordpress.org/themes/references/list-of-template-tags/
 - Modify the data
 - Return the modified data
 Hooks are a way for us to add our own code to customize default Wordpress behavior
+Filter hooks let us get data from WordPress, modify it and return it back customized.
 
 **Wordpress Action Runtime Lifecycle**
-1. Common Frond End Life Cycle
 2. Admin Area Life Cycle
+1. Common Frond End Life Cycle
 
 list and all hooks & lifecycle
 https://codex.wordpress.org/Plugin_API/Action_Reference
@@ -261,3 +262,6 @@ $wp_filter[ 'action_name' ];
 
 **to show certain hooks***
 R_Debug::list_hooks("content");
+R_Debug::list_live_hooks();
+
+https://codex.wordpress.org/Plugin_API/Filter_Reference

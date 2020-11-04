@@ -21,3 +21,10 @@ $h3: calc( #{$p} * calc( #{$scale} * #{$scale} * #{$scale} ) );
 $h4: calc( #{$p} * calc( #{$scale} * #{$scale} ) );
 $h5: calc( #{$p} * #{$scale} );
 $small: calc( #{$p} / #{$scale} );
+
+/*
+ * pt convertion to px
+ * pt = 20pt
+ * px = (20/0.75)px
+ * px = 26.666666667px
+ */

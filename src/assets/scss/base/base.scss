@@ -22,6 +22,19 @@
  */
 html {
     box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
 }
 
 a {
@@ -31,12 +44,15 @@ a {
     & :hover {
         color: inherit;
         cursor: hand;
+        outline: none;
     }
     & :active {
         color: inherit;
+        outline: none;
     }
     & :focus {
         color: inherit;
+        outline: none;
     }
 }
 
@@ -55,13 +71,17 @@ a {
 #content {
     background-color: Aquamarine;
     display: flex;
+    position: relative;
 }
 
 /*
  * Container with sidebar
  */
 #primary {
-    flex: 2;
+    // flex: 2;
+    height: 100vh;
+    overflow: scroll;
+    width: 100vw;
 }
 
 /*

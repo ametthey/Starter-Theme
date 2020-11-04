@@ -18,6 +18,7 @@
 
             <header id="masthead" class="site-header" role="banner">
 
+
                 <div class="site-branding">
                     <h2>The Header</h2>
                     <p class="site-title">
@@ -31,6 +32,7 @@
                         <?php esc_html_e( 'The Website Description: ' ); ?>
                         <?php bloginfo( 'description' ); ?>
                     </p>
+
                 </div>
 
                 <nav id="site-navigation" class="main-navigation" role="navigation">
