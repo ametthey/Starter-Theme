@@ -32,3 +32,24 @@ const observer = new IntersectionObserver( callback, options );
 sections.forEach( (section, index) => {
     observer.observe(section);
 });
+
+
+// Hamburger Menu
+// https://jonsuh.com/hamburgers/
+const hamburgerButton = document.querySelector('button.hamburger');
+const navigationMobile = document.querySelector('#site-navigation-mobile');
+const hamburgerCloseButton = document.querySelector('#site-navigation-mobile button');
+
+if ( hamburgerButton ) {
+    hamburgerButton.addEventListener('click', () => {
+        hamburgerButton.classList.add('is-active');
+        navigationMobile.classList.add('is-active');
+    });
+}
+
+if ( hamburgerCloseButton ) {
+    hamburgerCloseButton.addEventListener('click', () => {
+        navigationMobile.classList.remove('is-active');
+        hamburgerButton.classList.remove('is-active');
+    });
+}

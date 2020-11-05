@@ -9,7 +9,10 @@
 }
 
 #masthead {
+    align-items: center;
     background-color: AntiqueWhite;
+    display: flex;
+    justify-content: space-between;
 
     @include padding;
 }
@@ -30,6 +33,25 @@
 }
 
 #site-navigation {
+    @include respond(tablet) {
+        display: none;
+    }
+}
+
+#site-navigation-mobile {
+    align-items: center;
+    background-color: red;
+    display: none;
+    height: 100vh;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 1000;
+
+    &.is-active {
+        display: flex;
+    }
 }
 
 #menu-header-menu {

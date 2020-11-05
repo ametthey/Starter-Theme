@@ -1,0 +1,9 @@
+@import "node_modules/hamburgers/_sass/hamburgers/hamburgers";
+
+.hamburger {
+    display: none;
+
+    @include respond(tablet) {
+        display: block;
+    }
+}
