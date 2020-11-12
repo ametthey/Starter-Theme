@@ -21,18 +21,23 @@
 
                 <!-- Site branding -->
                 <div class="site-branding">
-                    <h2>The Header</h2>
+                    <a href="<?php echo get_home_url(); ?>">
+                        <h2>The Header</h2>
+                    </a>
                 </div>
 
                 <!-- Desktop navigation -->
-                <nav id="site-navigation" class="main-navigation" role="navigation">
+                <!-- <nav id="site&#45;navigation" class="main&#45;navigation" role="navigation"> -->
                     <?php
                         $args = [
                             'theme_location'    => 'header-menu',
+                            'container_class'   => 'main-navigation',
+                            'container_id'      => 'site-navigation',
+                            'container_aria_label'  => 'navigation'
                         ];
                         wp_nav_menu( $args );
                     ?>
-               </nav>
+               <!-- </nav> -->
 
                <!-- Hamburger menu for tablet and mobile navigation -->
                <button class="hamburger hamburger--collapse" type="button">

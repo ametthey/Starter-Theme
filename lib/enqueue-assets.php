@@ -36,7 +36,7 @@ add_action( 'admin_enqueue_scripts', '_themename_admin_assets' );
  */
 function _themename_login_assets() {
     wp_enqueue_style( '_themename-admin-stylesheet', get_stylesheet_directory_uri() . '/dist/assets/css/login.css', [], '1.0.0', 'all' );
-    wp_enqueue_script( '_themename-admin-scripts', get_stylesheet_directory_uri() . '/dist/assets/css/login.js', [], '1.0.0', 'all' );
+    // wp_enqueue_script( '_themename-admin-scripts', get_stylesheet_directory_uri() . '/dist/assets/css/login.js', [], '1.0.0', 'all' );
 }
 add_action( 'login_enqueue_scripts', '_themename_login_assets' );
 

@@ -1,4 +1,27 @@
 /****************************************************
+ * Layout System
+ * *************************************************/
+
+
+// Compile grid-template-columns and grid-template-rows
+@mixin grid($columns, $rows, $columnsSmall, $rowsSmall) {
+    display: grid;
+    grid-template-columns: $columns;
+    grid-template-rows: $rows;
+
+    @include respond(tablet) {
+        grid-template-columns: $columnsSmall;
+        grid-template-rows: $rowsSmall;
+    }
+}
+
+@mixin flex($align, $justify) {
+    align-items: $align;
+    display: flex;
+    justify-content: $justify;
+}
+
+/****************************************************
  *	MIXINS: MEDIA QUERIES
  * *************************************************/
 

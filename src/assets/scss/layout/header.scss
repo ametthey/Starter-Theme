@@ -10,7 +10,6 @@
 
 #masthead {
     align-items: center;
-    background-color: AntiqueWhite;
     display: flex;
     justify-content: space-between;
 
@@ -32,12 +31,34 @@
 .site-description {
 }
 
+/**************************
+ * Navigation Desktop
+**************************/
+
 #site-navigation {
+    width: 50%;
+
     @include respond(tablet) {
         display: none;
     }
 }
 
+#menu-header-menu {
+    @include flex(center, flex-end);
+    width: auto;
+
+    li {
+        padding: 0 1% 0 0;
+
+        &:last-child {
+            padding: 0 0 0 0;
+        }
+    }
+}
+
+/**************************
+ * Navigation Mobile
+**************************/
 #site-navigation-mobile {
     align-items: center;
     background-color: red;
@@ -54,7 +75,3 @@
     }
 }
 
-#menu-header-menu {
-    display: flex;
-    justify-content: space-evenly;
-}

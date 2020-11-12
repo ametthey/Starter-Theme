@@ -28,6 +28,8 @@ html {
 
 body {
     height: 100%;
+    margin: 0;
+    padding: 0;
     width: 100%;
 }
 
@@ -70,18 +72,35 @@ a {
  */
 #content {
     background-color: Aquamarine;
-    display: flex;
     position: relative;
+
+    @include grid( repeat(3,1fr) , repeat(3,1fr) , 1fr, auto);
+    grid-template-areas:
+        'main main main'
+        'main main main'
+        'main main main';
+
+    @include respond(tablet) {
+        grid-template-areas:
+            'main'
+    }
+
+
+    #primary {
+        grid-area: main;
+    }
+
+    #secondary {
+        grid-area: sidebar;
+    }
 }
 
 /*
  * Container with sidebar
  */
 #primary {
-    // flex: 2;
-    height: 100vh;
-    overflow: scroll;
-    width: 100vw;
+    height: inherit;
+    width: inherit;
 }
 
 /*

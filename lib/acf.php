@@ -1,11 +1,7 @@
-<?php 
+<?php
 
 /*
- *
  * everything ACF related
- *
- *
- *
  */
 
 

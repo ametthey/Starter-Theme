@@ -1,4 +1,5 @@
 import 'lazysizes';
+import './components/swiper.js';
 
 
 
