@@ -54,6 +54,8 @@ import zip from 'gulp-zip';
 import replace from 'gulp-replace';
 import info from './package.json';
 
+import postcss from 'gulp-postcss';
+import autoprefixer from 'autoprefixer';
 
 const server = browserSync.create();
 
@@ -116,6 +118,10 @@ export const styles = () => {
     // verify in Google Chrome inspector that CSS sourcemap is active
         .pipe(gulpif(!PRODUCTION,sourcemaps.init()))
         .pipe(sass().on('error', sass.logError))
+        .pipe(gulpif(PRODUCTION, postcss([ autoprefixer ({
+            grid: true,
+            flexbox: true,
+        })])))
         .pipe(gulpif(PRODUCTION, cleanCSS({compatibility: 'ie8'})))
         .pipe(gulpif(!PRODUCTION, sourcemaps.write()))
         .pipe(gulp.dest(path.styles.dest))

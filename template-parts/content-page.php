@@ -32,8 +32,12 @@
                 <div class="swiper-slide">
                     <img src="/wp-content/uploads/2020/11/edwardcurtis-galerieorenda1-copie.jpg" alt="">
                 </div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">
+                    <img src="/wp-content/uploads/2020/11/about_leone.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/wp-content/uploads/2020/11/Capture-décran-2020-11-11-à-09.37.38.jpg" alt="">
+                </div>
             </div>
 
             <!-- If we need navigation buttons -->

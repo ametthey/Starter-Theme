@@ -10,6 +10,8 @@
 
                 <p><?php echo apply_filters( '_themename_footer_message', $footer_message ); ?></p>
 
+                <button class="button__top">Back to top</button>
+
             </footer>
 
         </div><!-- #page -->
