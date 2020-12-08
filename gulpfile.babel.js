@@ -1,43 +1,3 @@
-/*
- * installed packages :
- *
- *		1 - core
- * npm install --save-dev gulp
- * npm install --save-dev @babel/register
- * npm install --save-dev @babel/core
- * npm install --save-dev @babel/preset-env
- *
- *		2 - arguement or flag
- *
- * npm install --save-dev yargs
- *		3 - sass
- * npm install node-sass gulp-sass --save-dev
- *		/ minify
- * npm install gulp-clean-css --save-dev
- *		/ condition for flag (PRODUCTION)
- * npm install gulp-if --save-dev
- *		/ sourcemap
- * npm install gulp-sourcemaps --save-dev
- *		/ imagemin
- * npm install --save-dev gulp-imagemin
- *		/ delete files and directories
- * npm install --save-dev del
- *		/ add webpack stream for js & ES 6 module bundle
- * npm install --save-dev webpack-stream
- *		/ add babel-loader for js & ES 6 module bundle
- * npm install --save-dev babel-loader
- *		/ add gul-uglyfy to minify js
- * npm install --save-dev gulp-uglify
- *		/ add browser-sync to livereload
- * npm install --save-dev browser-sync
- *		/ add gulp-zip to export the theme into a zip file then the user can import the zip
- * npm install --save-dev gulp-zip
- *		/ add gulp-replace to replace _themename prefix all over the theme so when i'm working on a new theme, I can
- *		replace the prefix on package.json and it will change everywhere
- * npm i gulp-replace --save-dev
- */
-
-// ES6 syntax to import
 import gulp from 'gulp';
 import yargs from 'yargs';
 import sass from 'gulp-sass';
@@ -72,7 +32,7 @@ const path = {
         dest: 'dist/assets/js'
     },
     images: {
-        src: 'src/assets/images/**/*.{jpg, jpeg, png, svg, gif}',
+        src: 'src/assets/images/**/*.{jpg, jpeg, png, svg, gif, mp4, json}',
         dest: 'dist/assets/images'
     },
     other: {

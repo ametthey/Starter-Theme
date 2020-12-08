@@ -14,12 +14,12 @@ const options = {
     threshold: 0.25
 }
 
-const callback = (entries) => {
+const callback = (entries, observer) => {
     entries.forEach( (entry) => {
         const { target } = entry;
         // console.log(target);
 
-        if ( entry.entersectionRatio >= 0.25 ) {
+        if ( entry.intersectionRatio >= 0.25 ) {
             target.classList.add('is-visible');
             console.log(target);
         } else {
